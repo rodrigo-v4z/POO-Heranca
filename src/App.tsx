@@ -10,7 +10,7 @@ function App() {
   return (
     <>
     <div>
-        <button onClick={() => {rex.emitirSom()}}>Emitir Som</button>
+        <button onClick={() => {rex.emitirSom()}}>{rex.emitirSom()}</button>
         <p>{rex.correr()}</p>
       </div>
     </>
