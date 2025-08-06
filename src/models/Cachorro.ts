@@ -2,6 +2,7 @@
 import { Animal } from './Animal';
 
 export class Cachorro extends Animal {
+
   emitirSom(): string {
     const latido = new Audio("/Sons/dog-bark-382732.mp3");
     
