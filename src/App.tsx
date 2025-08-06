@@ -7,14 +7,20 @@ function App() {
   const [count, setCount] = useState(0);
   
   const rex = new Cachorro('Rex');
-  const hamster = new Hamster('Julio');
+  const bolinha = new Hamster('Bolinha');
 
   return (
     <>
     <div>
-        <button onClick={() => {hamster.emitirSom()}}>{hamster.emitirSom()}</button>
+        <p>🐕 Cachorro: {rex.getNome()}</p>
+        <button onClick={() => {rex.emitirSom()}}>{rex.emitirSom()}</button>
         <p>{rex.correr()}</p>
-      </div>
+        <hr />
+        <p>🐹 Cachorro: {bolinha.getNome()}</p>
+        <button onClick={() => {bolinha.emitirSom()}}>{bolinha.emitirSom()}</button>
+        <p>{bolinha.comerSemente()}</p>
+        <hr />
+    </div>
     </>
   )
 }
